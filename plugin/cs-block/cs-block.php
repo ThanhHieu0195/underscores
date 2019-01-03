@@ -15,4 +15,5 @@
 
 define('CS_BLOCK_NAME', 'cs-block');
 require_once WP_PLUGIN_DIR . '/' . CS_BLOCK_NAME . '/block/block-title/index.php';
+require_once WP_PLUGIN_DIR . '/' . CS_BLOCK_NAME . '/block/block-banner/index.php';
 defined('ABSPATH') || exit;
