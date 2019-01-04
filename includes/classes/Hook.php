@@ -88,6 +88,22 @@ class Hook implements HookInterface{
     }
 
     public function excuteAjax() {
+        if ($_POST['method']) {
+            $method = $_POST['method'];
+            switch ($method) {
+                case 'sendContact':
+                    $params = $_POST['contact'];
+                    $subject = '[CONTACT GUEST]';
+                    $result = wp_mail($params['email'], $subject, $params['reason']);
+
+                    header('Location: ' . $_SERVER['HTTP_REFERER'] . '?message=success');
+                    exit;
+                    break;
+                default:
+                    # code...
+                    break;
+            }
+        }
         exit(200);
     }
 
