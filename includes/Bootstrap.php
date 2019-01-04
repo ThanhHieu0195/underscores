@@ -53,6 +53,7 @@ class Bootstrap implements interfaces\ManagementInterface {
             self::$bootstrap->registerHelper();
             self::$bootstrap->registerHook();
             self::$bootstrap->registerLanguage();
+
             //self::$bootstrap->configs = \includes\classes\ConfigMenu::getInstance();
 		}
 	}
