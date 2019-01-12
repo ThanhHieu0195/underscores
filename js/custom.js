@@ -188,9 +188,7 @@ jQuery(document).ready(function($)
 	    	// var target_date = new Date("Dec 7, 2017").getTime();
 
 	    	// comment lines below
-	    	var date = new Date();
-	    	date.setDate(date.getDate() + 3);
-	    	var target_date = date.getTime();
+	    	var target_date = parseInt($('.timer').data('time'));
 	    	//----------------------------------------
 	 
 			// variables for time units
