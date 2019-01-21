@@ -7,6 +7,7 @@
  * @package _s
  */
 
+define('PATH_THEME', dirname(__FILE__));
 if ( ! function_exists( '_s_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
