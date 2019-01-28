@@ -2016,7 +2016,8 @@ section
 	content: '';
 	height: 24px;
 	width: 24px;
-	background: url(../img/cd-icon-arrow-next.svg) no-repeat center center;
+	background: url('https://svgshare.com/i/Aph.svg'
+	) no-repeat center center;
 	opacity: 0;
 	-webkit-transition: opacity .2s;
 	transition: opacity .2s;
