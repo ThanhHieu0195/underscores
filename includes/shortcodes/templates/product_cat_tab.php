@@ -91,7 +91,7 @@ if (!empty($cat_slugs)) {
 							</div>
 							<?php endif; ?>
 						</div>
-						<div class="red_button add_to_cart_button">
+						<div class="red_button add_to_cart_button cd-add-to-cart">
 							<a href="#"><?= esc_html__('add to cart', 'build') ?></a>
 						</div>
 						<div class="cd-cart-container empty">
@@ -109,7 +109,7 @@ if (!empty($cat_slugs)) {
 										<h2>Cart</h2>
 										<span class="undo">Item removed. <a href="#0">Undo</a></span>
 									</header>
-									
+
 									<div class="body">
 										<ul>
 											<!-- products added to the cart will be inserted here using JavaScript -->
