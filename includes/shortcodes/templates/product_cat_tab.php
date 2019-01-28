@@ -92,7 +92,8 @@ if (!empty($cat_slugs)) {
 							<?php endif; ?>
 						</div>
 						<div class="red_button add_to_cart_button cd-add-to-cart">
-							<a href="#"><?= esc_html__('add to cart', 'build') ?></a>
+							<a href="#" data-price="25.99"><?= esc_html__('add to cart', 'build') ?></a>
+							
 						</div>
 						<div class="cd-cart-container empty">
 							<a href="#0" class="cd-cart-trigger">
