@@ -103,14 +103,7 @@
 				<div class="col-lg-12 text-right">
 				<div class="logo_container"><a href="#">colo<span>shop</span></a></div>
 				<nav class="navbar">
-					<ul class="navbar_menu">
-					<li><a href="#">home</a></li>
-					<li><a href="#">shop</a></li>
-					<li><a href="#">promotion</a></li>
-					<li><a href="#">pages</a></li>
-					<li><a href="#">blog</a></li>
-					<li><a href="contact.html">contact</a></li>
-					</ul>
+					<?= clean_custom_menus() ?>
 					<ul class="navbar_user">
 					<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>

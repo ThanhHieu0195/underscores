@@ -181,3 +181,23 @@ function log_mailer_errors( $wp_error ){
   fputs($fp, "Mailer Error: " . $wp_error->get_error_message() ."\n");
   fclose($fp);
 }
+
+function clean_custom_menus() {
+	$menu_list = '';
+	$menu_name = 'menu-1'; // specify custom menu slug
+	if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+		$menu = wp_get_nav_menu_object($locations[$menu_name]);
+		$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+		$menu_list = '<ul class="navbar_menu">' ."\n";
+		foreach ((array) $menu_items as $key => $menu_item) {
+			$title = $menu_item->title;
+			$url = $menu_item->url;
+			$menu_list .= "\t\t\t\t\t". '<li><a href="'. $url .'">'. $title .'</a></li>' ."\n";
+		}
+		$menu_list .= "\t\t\t\t". '</ul>' ."\n";
+	} else {
+		// $menu_list = '<!-- no list defined -->';
+	}
+	echo $menu_list;
+}
