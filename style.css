@@ -68,6 +68,7 @@ html {
 
 body {
 	margin: 0;
+	background-color: red;
 }
 
 /**
@@ -469,7 +470,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: red;
 	/* Fallback for when there is no custom background color defined. */
 }
 
