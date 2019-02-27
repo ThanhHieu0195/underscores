@@ -92,7 +92,7 @@ if (!empty($cat_slugs)) {
 							<?php endif; ?>
 						</div>
 						<div class="red_button add_to_cart_button">
-							<a href="#"><?= esc_html__('add to cart', 'build') ?></a>
+							<a href="javascript:void(0)" data-product-id="<?= $obj['data']->ID ?>" class="js-bt-add-to-cart"><?= esc_html__('add to cart', 'build') ?></a>
 						</div>
 					</div>
 					<?php endforeach; ?>

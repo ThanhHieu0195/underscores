@@ -114,7 +114,7 @@
 					<ul class="navbar_user">
 					<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-					<li class="checkout"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="checkout_items" id="checkout_items">2</span></a></li>
+					<li class="checkout"><a href="<?php echo wc_get_cart_url(); ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="checkout_items" id="checkout_items"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a></li>
 					</ul>
 					<div class="hamburger_container"><i class="fa fa-bars" aria-hidden="true"></i></div>
 				</nav>

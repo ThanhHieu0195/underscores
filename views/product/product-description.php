@@ -55,8 +55,8 @@ $regular_price = get_post_meta($post->ID, '_regular_price', true);
 							<span id="quantity_value">1</span>
 							<span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
 						</div>
-						<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
-						<div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
+						<a href="javascript:void(0)" class="js-btn-product-add-to-cart" data-product-id="<?= $post->ID ?>">add to cart
+							</a>
 					</div>
 				</div>
 			</div>

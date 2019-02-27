@@ -71,6 +71,8 @@ class Hook implements HookInterface{
             'js-contact' => 'js/contact_custom.js',
             'js-categories' => 'js/categories_custom.js',
             'js-single' => 'js/single_custom.js',
+            'js-notify' => 'js/notify.min.js',
+            'js-theme-custom' => 'js/theme_custom.js',
         );
         foreach ($scripts as $script) {
             wp_enqueue_script($script, $path .'/'. $script, array('jquery'), self::VERSION, true);
