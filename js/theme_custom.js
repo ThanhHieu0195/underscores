@@ -4,7 +4,7 @@
 		if (!isProcess) {
 			isProcess = true;
 			let product_id = $(this).data('product-id');
-			$.post(window.location.origin + '/cart?add-to-cart='+product_id+'&quantity=1', function () {
+			$.post(window.location.origin + window.location.pathname+'?add-to-cart='+product_id+'&quantity=1', function () {
 				$.notify('add Product to cart!', {
 					position: 'bottom',
 					className: 'success'
@@ -21,7 +21,7 @@
 			isProcess = true;
 			let product_id = $(this).data('product-id');
 			let quantity = parseInt($('#quantity_value').html());
-			$.post(window.location.origin + '/cart?add-to-cart='+product_id+'&quantity='+quantity, function () {
+			$.post(window.location.origin + window.location.pathname+'?add-to-cart='+product_id+'&quantity='+quantity, function () {
 				$.notify('add Product to cart!', {
 					position: 'bottom',
 					className: 'success'
