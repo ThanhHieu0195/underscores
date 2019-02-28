@@ -101,6 +101,7 @@ $posts = get_posts($query_params);
                           <?php endif; ?>
                             <div class="product_info">
                               <h6 class="product_name"><a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title ?></a></h6>
+                              <div class="product-code">123456</div>
                               <?php if ($type == 2): ?>
                               <div class="product_price"><?= number_format(intval($saleprice)) .get_woocommerce_currency_symbol() ?><span><?= number_format(intval($price)) . get_woocommerce_currency_symbol()?></span></div>
                               <?php else: ?>

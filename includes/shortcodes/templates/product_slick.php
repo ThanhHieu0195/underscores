@@ -43,11 +43,13 @@ $products = get_posts([
 											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-<?= ($price-$saleprice)/$price*100 ?>%</span></div>
 										<div class="product_info">
 											<h6 class="product_name"><a href="<?= get_permalink($product->ID) ?>"><?= $product->post_title ?></a></h6>
+											<div class="product-code">123456</div>
 											<div class="product_price"><?= $saleprice ?>VND<span><?= $price ?>VND</span></div>
 										</div>
 										<?php else: ?>
 										<div class="product_info">
 											<h6 class="product_name"><a href="<?= get_permalink($product->ID) ?>"><?= $product->post_title ?></a></h6>
+											<div class="product-code">123456</div>
 											<div class="product_price"><?= $price ?>VND</div>
 										<?php endif; ?>
 										
