@@ -69,6 +69,7 @@ if (!empty($cat_slugs)) {
 						if (!empty($saleprice)) {
 							$type = 2;
 						}
+						$attrs = get_post_meta($obj['data']->ID, '_product_attributes', []);
 						?>
 					<div class="product-item <?= implode(' ', $obj['slug']) ?>">
 						<div class="product discount product_filter">
@@ -80,7 +81,15 @@ if (!empty($cat_slugs)) {
 							<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-<?= ($price - $saleprice)/$price*100 ?>%</span></div>
 							<div class="product_info">
 								<h6 class="product_name"><a href="<?= get_permalink($obj['data']->ID) ?>"><?= $obj['data']->post_title ?></a></h6>
-								<div class="product-code">123456</div>
+								<?php 
+								if (!empty($attrs)) {
+									foreach ($attrs as $attr) {
+										if (!empty($attr['code'])) {
+											echo '<div class="product-code">Mã: ' .$attr['code']['value'].'</div>';
+										}
+									}
+								}
+								?>
 								<div class="product_price"><?= number_format($saleprice) ?>VND<span><?= number_format($price) ?>VND</span></div>
 							</div>
 							<?php else: ?>
@@ -88,7 +97,15 @@ if (!empty($cat_slugs)) {
 								<h6 class="product_name">
 									<a href="<?= get_permalink($obj['data']->ID) ?>"><?= $obj['data']->post_title ?></a>
 								</h6>
-								<div class="product-code">123456</div>
+								<?php 
+								if (!empty($attrs)) {
+									foreach ($attrs as $attr) {
+										if (!empty($attr['code'])) {
+											echo '<div class="product-code">Mã: ' .$attr['code']['value'].'</div>';
+										}
+									}
+								}
+								?>
 								<div class="product_price"><?= number_format($price) ?>VND</div>
 							</div>
 							<?php endif; ?>
