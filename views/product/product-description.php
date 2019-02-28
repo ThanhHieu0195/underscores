@@ -35,8 +35,8 @@ $regular_price = get_post_meta($post->ID, '_regular_price', true);
 						<h2><?= $post->post_title ?></h2>
 						<p><?= $post->post_excerpt ?>...</p>
 					</div>
-					<div class="original_price"><?= number_format($regular_price) ?>VND</div>
-					<div class="product_price"><?= number_format($price) ?>VND</div>
+					<div class="original_price"><?= number_format(intval($regular_price)) ?>VND</div>
+					<div class="product_price"><?= number_format(intval($price)) ?>VND</div>
 					<ul class="star_rating">
 						<?php 
 						for($i=1; $i<5; $i++) {
