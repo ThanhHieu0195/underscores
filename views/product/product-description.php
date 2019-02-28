@@ -6,6 +6,7 @@ $attachment_url_first = wp_get_attachment_url($arr_gallary[0]);
 $avg_rating = intval(get_post_meta($post->ID, '_wc_average_rating', true));
 $price = get_post_meta($post->ID, '_price', true);
 $regular_price = get_post_meta($post->ID, '_regular_price', true);
+$attrs = get_post_meta($post->ID, '_product_attributes', []);
 ?>
 <div class="col-lg-7">
 				<div class="single_product_pics">
@@ -35,7 +36,15 @@ $regular_price = get_post_meta($post->ID, '_regular_price', true);
 						<h2><?= $post->post_title ?></h2>
 						<p><?= $post->post_excerpt ?>...</p>
 					</div>
-					<div class="product-code">123456</div>
+					<?php 
+					if (!empty($attrs)) {
+						foreach ($attrs as $attr) {
+							if (!empty($attr['code'])) {
+								echo '<div class="product-code">Mã: ' .$attr['code']['value'].'</div>';
+							}
+						}
+					}
+					?>
 					<div class="original_price"><?= number_format(intval($regular_price)) ?>VND</div>
 					<div class="product_price"><?= number_format(intval($price)) ?>VND</div>
 					<ul class="star_rating">
