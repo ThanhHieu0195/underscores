@@ -1,10 +1,14 @@
 <?php 
 extract($params);
-$products = get_posts([
-	'post_type' => 'product',
-	'include' => $product_ids
-]);
+$param_query = [
+	'post_type' => 'product'
+];
 
+if (isset($product_ids) && $product_ids) {
+	$arr = explode(',', $product_ids);
+	$param_query['include'] = $arr;
+}
+$products = get_posts($param_query);
 ?>
 	<div class="best_sellers">
 		<div class="container">
