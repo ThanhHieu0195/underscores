@@ -72,6 +72,7 @@ $products = get_posts($param_query);
 											}
 											?>
 											<div class="product_price"><?= $price ?>VND</div>
+										</div>
 										<?php endif; ?>
 										
 									</div>
