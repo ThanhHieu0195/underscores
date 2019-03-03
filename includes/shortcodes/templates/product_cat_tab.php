@@ -13,7 +13,7 @@ if (!empty($cat_slugs)) {
 			        array(
 			            'taxonomy' => 'product_cat',
 			            'terms' => $term->term_id,
-			            'field' => 'term_id',
+			            'field' => 'id',
 			        )
 			    )
 			));
