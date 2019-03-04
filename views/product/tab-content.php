@@ -24,7 +24,7 @@
 							<?php 
 							if (!empty($tab_desc)):
 							foreach($tab_desc as $desc): ?>
-							<div class="col-lg-5 offset-lg-2 desc_col">
+							<div class="desc_col">
 								<div class="tab_image">
 									<img src="<?= $desc['img']['url'] ?>" alt="">
 								</div>
