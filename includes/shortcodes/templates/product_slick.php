@@ -84,7 +84,7 @@ $products = get_posts($param_query);
 												}
 											}
 											?>
-											<div class="product_price"><?= $saleprice ?>VND<span><?= $price ?>VND</span></div>
+											<div class="product_price"><?= $saleprice ?> <?= get_woocommerce_currency_symbol() ?><span><?= $price ?> <?= get_woocommerce_currency_symbol() ?></span></div>
 										</div>
 										<?php else: ?>
 										<div class="product_info">
@@ -98,7 +98,7 @@ $products = get_posts($param_query);
 												}
 											}
 											?>
-											<div class="product_price"><?= $price ?>VND</div>
+											<div class="product_price"><?= $price ?> <?= get_woocommerce_currency_symbol() ?></div>
 										</div>
 										<?php endif; ?>
 									</div>
