@@ -5,9 +5,9 @@
 				<div class="col">
 					<div class="tabs_container">
 						<ul class="tabs d-flex flex-sm-row flex-column align-items-left align-items-md-center justify-content-center">
-							<li class="tab active" data-active-tab="tab_1"><span><?= esc_html__('Description', 'build') ?></span></li>
-							<li class="tab" data-active-tab="tab_2"><span><?= esc_html__('Additional Information', 'build') ?></span></li>
-							<li class="tab" data-active-tab="tab_3"><span><?= esc_html__('Reviews', 'build') ?></span></li>
+							<li class="tab active" data-active-tab="tab_1"><span><?= esc_html__('Description', 'underscores') ?></span></li>
+							<li class="tab" data-active-tab="tab_2"><span><?= esc_html__('Additional Information', 'underscores') ?></span></li>
+							<li class="tab" data-active-tab="tab_3"><span><?= esc_html__('Reviews', 'underscores') ?></span></li>
 						</ul>
 					</div>
 				</div>
@@ -50,7 +50,7 @@
 						<div class="row">
 							<div class="col additional_info_col">
 								<div class="tab_title additional_info_title">
-									<h4><?= esc_html__('Additional Information', 'build') ?></h4>
+									<h4><?= esc_html__('Additional Information', 'underscores') ?></h4>
 								</div>
 								<?php 
 								if (!empty($tab_info)):
@@ -75,7 +75,7 @@
 
 							<div class="col-lg-6 reviews_col">
 								<div class="tab_title reviews_title">
-									<h4><?= esc_html__('Reviews', 'build') ?></h4>
+									<h4><?= esc_html__('Reviews', 'underscores') ?></h4>
 								</div>
 
 								<!-- User Review -->
