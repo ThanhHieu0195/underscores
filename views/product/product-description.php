@@ -45,8 +45,8 @@ $attrs = get_post_meta($post->ID, '_product_attributes', []);
 						}
 					}
 					?>
-					<div class="original_price"><?= number_format(intval($regular_price)) ?>VND</div>
-					<div class="product_price"><?= number_format(intval($price)) ?>VND</div>
+					<div class="original_price"><?= number_format(intval($regular_price)) ?> <?= get_woocommerce_currency_symbol() ?></div>
+					<div class="product_price"><?= number_format(intval($price)) ?> <?= get_woocommerce_currency_symbol() ?></div>
 					<ul class="star_rating">
 						<?php 
 						for($i=1; $i<5; $i++) {

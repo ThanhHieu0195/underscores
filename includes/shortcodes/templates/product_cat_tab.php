@@ -90,7 +90,7 @@ if (!empty($cat_slugs)) {
 									}
 								}
 								?>
-								<div class="product_price"><?= number_format($saleprice) ?>VND<span><?= number_format($price) ?>VND</span></div>
+								<div class="product_price"><?= number_format($saleprice) ?> <?= get_woocommerce_currency_symbol() ?><span><?= number_format($price) ?> <?= get_woocommerce_currency_symbol() ?></span></div>
 							</div>
 							<?php else: ?>
 							<div class="product_info">
@@ -106,7 +106,7 @@ if (!empty($cat_slugs)) {
 									}
 								}
 								?>
-								<div class="product_price"><?= number_format($price) ?>VND</div>
+								<div class="product_price"><?= number_format($price) ?> <?= get_woocommerce_currency_symbol() ?></div>
 							</div>
 							<?php endif; ?>
 						</div>
