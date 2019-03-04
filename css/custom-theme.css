@@ -1,0 +1,128 @@
+
+#blog-detail {
+	padding: 80px 100px;
+}
+
+#blog-detail .main-header img {
+	padding-bottom: 40px;
+}
+
+#blog-detail .entry-title {
+	font-size: 25px;
+	color: inherit;
+	margin-bottom: 0;
+}
+
+#blog-detail .post-thumbnail img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+#blog-detail .post-thumbnail {
+	padding-bottom: 40px;
+}
+
+#blog-detail .blog-main {
+	padding: 0 120px;
+}
+
+#blog-detail .blog-main .entry-content p {
+	color: #2f2f2f;
+	font-weight: 300;
+	text-shadow: none;
+}
+
+#blog-detail .entry-footer {
+	padding: 10px 120px;	
+}
+
+#blog-detail .entry-footer .cat-links a {
+	background-color: #a7a7a7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #ececec;
+    transition: background-color .5s;
+}
+
+#blog-detail .entry-footer .cat-links a:hover {
+	background-color: #313131;
+}
+
+.nav-next::after {
+	content: '';
+}
+
+#comments .comments-title {
+	font-size: 20px;
+	display: none;	
+}
+
+#comments .comment-list {
+	list-style: none;
+	margin-left: 0px;
+}
+
+#comments .comment-list li {
+	padding-left: 10px;
+}
+
+#comments .comment-list li img {
+	border-radius: 50%;
+	margin-right: 20px;
+	width: 50px;
+}
+#comments .comment-list li .comment-author {
+	padding-bottom: 5px;
+}
+#comments .comment-list li .comment-author .says {
+	display: none;
+}
+
+#comments .comment-list li .comment-author .fn, #comments .comment-list li .comment-author .fn a {
+	color: #525252;
+    font-weight: 500; 
+    font-size: 20px;
+}
+
+#comments .comment-metadata time {
+	color: #989898;
+	font-size: 10px;
+}
+
+#comments .comment-metadata {
+	padding-bottom: 5px;
+}
+
+#comments .comment-list li.comment {
+	background: #f3f3f3;
+    border-radius: 5px;
+    padding: 20px 20px;
+    color: white;
+}
+
+#blog-detail .entry-footer {
+	padding-bottom: 20px;
+	float: right;
+}
+
+#blog-detail .post-navigation {
+	clear: both;
+}
+
+#blog-detail #respond #reply-title, #blog-detail #respond .logged-in-as{
+	display: none;
+}
+
+#blog-detail #respond .submit {
+	padding: 10px 20px;
+    background: #06b52c;
+    color: white;
+    font-weight: 700;
+}
+
+#blog-detail #commentform input[type=text],
+#blog-detail #commentform input[type=email],
+#blog-detail #commentform input[type=url]
+ {
+	width: 100%;
+}

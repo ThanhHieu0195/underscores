@@ -48,8 +48,7 @@ class Hook implements HookInterface{
             'categories_responsive' => 'css/categories_responsive.css',
             'main_style' => 'css/main_styles.css',
             'responsive' => 'css/responsive.css',
-
-
+            'custom-theme' => 'css/custom-theme.css',
         );
         foreach ($styles as $style) {
             wp_enqueue_style($style, $path .'/'. $style, array(), self::VERSION);

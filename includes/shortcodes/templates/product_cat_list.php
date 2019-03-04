@@ -1,7 +1,11 @@
 <?php
 $args = ['taxonomy' => 'product_cat'];
-if (isset($params['cat_ids'])) {
+if (isset($params['cat_ids']) && $params['cat_ids']) {
 	$args['include'] = $params['cat_ids'];
+}
+if (isset($params['cat_slugs']) && $params['cat_slugs']) {
+	$arr = explode(',', $params['cat_slugs']);
+	$args['slug'] = $arr;
 }
 
 if (isset($params['number'])) {

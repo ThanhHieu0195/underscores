@@ -9,6 +9,31 @@ if (isset($product_ids) && $product_ids) {
 	$arr = explode(',', $product_ids);
 	$param_query['include'] = $arr;
 }
+
+if (isset($cat_slugs) && $cat_slugs) {
+	$arr = explode(',', $cat_slugs);
+	$param_query['tax_query'] = array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field' => 'slug',
+            'terms' => $arr,
+            'operator' => 'IN',
+        )
+     );
+}
+
+if (isset($cat_ids) && $cat_ids) {
+	$arr = explode(',', $cat_ids);
+	$param_query['tax_query'] = array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field' => 'id',
+            'terms' => $arr,
+            'operator' => 'IN',
+        )
+     );
+}
+
 $products = get_posts($param_query);
 ?>
 	<div class="best_sellers">
@@ -59,7 +84,7 @@ $products = get_posts($param_query);
 												}
 											}
 											?>
-											<div class="product_price"><?= $saleprice ?>VND<span><?= $price ?>VND</span></div>
+											<div class="product_price"><?= $saleprice ?> <?= get_woocommerce_currency_symbol() ?><span><?= $price ?> <?= get_woocommerce_currency_symbol() ?></span></div>
 										</div>
 										<?php else: ?>
 										<div class="product_info">
@@ -73,7 +98,7 @@ $products = get_posts($param_query);
 												}
 											}
 											?>
-											<div class="product_price"><?= $price ?>VND</div>
+											<div class="product_price"><?= $price ?> <?= get_woocommerce_currency_symbol() ?></div>
 										</div>
 										<?php endif; ?>
 									</div>
