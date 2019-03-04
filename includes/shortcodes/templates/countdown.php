@@ -25,19 +25,19 @@ if (isset($deadline)) {
 					<ul class="timer" data-time="<?= $deadline ?>">
 						<li class="d-inline-flex flex-column justify-content-center align-items-center">
 							<div id="day" class="timer_num">00</div>
-							<div class="timer_unit"><?= esc_html__('Day', 'build') ?></div>
+							<div class="timer_unit"><?= esc_html__('Day', 'underscores') ?></div>
 						</li>
 						<li class="d-inline-flex flex-column justify-content-center align-items-center">
 							<div id="hour" class="timer_num">00</div>
-							<div class="timer_unit"><?= esc_html__('Hours', 'build') ?></div>
+							<div class="timer_unit"><?= esc_html__('Hours', 'underscores') ?></div>
 						</li>
 						<li class="d-inline-flex flex-column justify-content-center align-items-center">
 							<div id="minute" class="timer_num">00</div>
-							<div class="timer_unit"><?= esc_html__('Mins', 'build') ?></div>
+							<div class="timer_unit"><?= esc_html__('Mins', 'underscores') ?></div>
 						</li>
 						<li class="d-inline-flex flex-column justify-content-center align-items-center">
 							<div id="second" class="timer_num">00</div>
-							<div class="timer_unit"><?= esc_html__('Sec', 'build') ?></div>
+							<div class="timer_unit"><?= esc_html__('Sec', 'underscores') ?></div>
 						</li>
 					</ul>
 					<div class="red_button deal_ofthe_week_button"><a href="<?= $btn_link ?>"><?= $btn_text ?></a></div>

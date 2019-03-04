@@ -19,7 +19,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
-              <h4>Newsletter</h4>
+              <h4><?= __('Newsletter', 'underscores') ?></h4>
               <p>Subscribe to our newsletter and get 20% off your first purchase</p>
             </div>
           </div>
@@ -27,7 +27,7 @@
             <form action="post">
               <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
                 <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
-                <button class="newsletter_submit_btn trans_300" id="newsletter_submit" type="submit" value="Submit">subscribe</button>
+                <button class="newsletter_submit_btn trans_300" id="newsletter_submit" type="submit" value="Submit"><?= __('subscribe', 's') ?></button>
               </div>
             </form>
           </div>
@@ -40,9 +40,9 @@
           <div class="col-lg-6">
             <div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
               <ul class="footer_nav">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#"><?= __('Blog', 'underscores') ?></a></li>
+                <li><a href="#"><?= __('FAQs', 'underscores') ?></a></li>
+                <li><a href="contact.html"><?= __('Contact us', 'underscores') ?></a></li>
               </ul>
             </div>
           </div>
