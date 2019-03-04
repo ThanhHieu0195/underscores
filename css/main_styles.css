@@ -5592,3 +5592,15 @@ table.shop_table_responsive tr.order-total td {
 .breadcrumbs ul {
 	margin-left: 0;
 }
+
+.entry-title {
+	display: none
+}
+
+.entry-content {
+	margin: 0;
+}
+
+.woocommerce-page .entry-title {
+	display: block;
+}
