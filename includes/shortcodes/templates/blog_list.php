@@ -36,7 +36,7 @@ $posts = get_posts($args);
 						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
 							<h4 class="blog_title"><?= $post->post_title ?></h4>
 							<span class="blog_meta">by <?= the_author_meta( 'user_nicename' , $author_id ); ?>  | <?= date($date_format, strtotime($post_date)) ?></span>
-							<a class="blog_more" href="<?= get_permalink($post->ID) ?>"><?= esc_html__('Read more', 'build') ?></a>
+							<a class="blog_more" href="<?= get_permalink($post->ID) ?>"><?= esc_html__('Read more', 'underscores') ?></a>
 						</div>
 					</div>
 				</div>
